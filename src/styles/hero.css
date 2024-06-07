@@ -118,15 +118,15 @@
     
     }
     
-    .heroContainer section{
+   .heroContainer section{
         margin-top: -20rem;
-        width: 200px;
+        width: 300px;
         padding: 2rem;
         margin: auto;
     }
 
     .heroContainer h3{
-        font-size: 2rem;
+        font-size: 3rem;
         margin: auto;
     }
 }
