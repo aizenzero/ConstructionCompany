@@ -1,0 +1,141 @@
+.servicesContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+
+    text-align: center;
+   
+    gap: 2rem;
+    padding: 2rem 10rem;
+
+    background-image: url("../images/bg5.jpg");
+    
+    background-size: cover;
+    background-position: center;
+
+   color: rgba(15, 14, 14, 0.932);
+}
+
+
+.servicesContainer h3{
+    grid-column: span 3;
+    
+   color: rgba(255, 255, 255, 0.952);
+
+   font-size: 2rem;
+}
+
+.servicesContainer h4{
+   color: rgb(15, 15, 15);
+}
+
+.servicesContainer section{
+    width: 300px;
+    height: 240px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: auto;
+
+    padding: 1rem;
+    border-radius: 1rem;
+
+    background-color: rgba(255, 254, 254, 0.384);
+}
+
+.servicesContainer section h4{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+}
+
+
+@media (max-width:1250px) {
+    .servicesContainer{
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+    
+    
+}
+
+
+@media (max-width:1000px) {
+    .servicesContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .servicesContainer h3{
+        grid-column: span 2;
+        
+       color: rgba(255, 255, 255, 0.952);
+    
+       font-size: 2rem;
+    }
+}
+
+
+@media (max-width:694px) {
+
+    .servicesContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .servicesContainer section{
+
+        width: 300px;
+        height: 150px;
+      
+    }
+
+
+    .servicesContainer p{
+        display: none;
+     }
+
+     .servicesContainer h3{
+        grid-column: span 1;
+        
+    }
+
+
+     
+    
+}
+
+
+@media (max-width:612px) {
+
+    .servicesContainer {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .servicesContainer section{
+        width: 200px;
+        height: 180px;
+      
+    }
+    .servicesContainer h3{
+        grid-column: span 2;
+        
+    }
+    
+}
+
+
+
+@media (max-width:495px) {
+
+    .servicesContainer{
+        padding: 1rem;
+    }
+
+    .servicesContainer section{
+        width: 150px;
+        height: 150px;
+       
+    }
+    .servicesContainer section h4{
+        font-size: 1rem;
+       
+    }
+}
+

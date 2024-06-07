@@ -1,0 +1,128 @@
+.projectContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    text-align: center;
+
+    padding: 1rem 8rem 2rem;
+    gap: 1rem;
+
+    background-color: rgba(236, 226, 226, 0.781);
+
+
+}
+.projectContainer h4{
+    grid-column: span 3;
+    font-size: 2rem;
+}
+
+#project1{
+   background-image: url("../images/project1.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+
+   height: 25rem;
+   border: 1px solid rgb(0, 0, 0);
+
+   grid-column: span 2;
+   grid-row: 2 / 4;
+  
+
+}
+
+#project2{
+    background-image: url("../images/project2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 25rem;
+    border: 1px solid rgb(0, 0, 0);
+
+    grid-row:span 2;
+ }
+
+#project3{
+   background-image: url("../images/project3.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+   height: 35rem;
+   border: 1px solid rgb(0, 0, 0);
+}
+
+#project4{
+    background-image: url("../images/project4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-position: center;
+    
+    height: 35rem;
+    border: 1px solid rgb(0, 0, 0);
+
+    grid-column: span 2;
+ }
+
+ #project5{
+    background-image: url("../images/project5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 15rem;
+    border: 1px solid rgb(0, 0, 0);
+
+    grid-column: span 3;
+
+
+ }
+
+
+ @media (max-width:1000px) {
+   .projectContainer{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+  
+  
+   }
+  #project1{
+   grid-column: span 3;
+  
+   }
+   #project2{
+      grid-row:span 1;
+   }
+   #project3{
+      
+      grid-column: span 2;
+      height: 25rem;
+      border: 1px solid rgb(0, 0, 0);
+
+      background-position: center;
+      
+   }
+
+   #project4{
+      background-image: url("../images/project4.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  
+      background-position: center;
+      
+      height: 25rem;
+      border: 1px solid rgb(0, 0, 0);
+     
+      grid-column: span 3;
+   }
+  
+   
+ }
+
+
+ @media (max-width:762px) {
+   .projectContainer{
+  
+      padding: 1rem;
+   }
+ }

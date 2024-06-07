@@ -1,0 +1,132 @@
+
+.heroContainer{
+    background-image: url("../images/bg2.jpg");
+    background-position:0px calc(80% - 5px);
+    background-size: cover;
+   
+
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+
+    align-items: center;
+    text-align: center;
+   
+    /* gap: 5rem; */
+
+}
+
+.heroContainer section{
+    /* padding: 5rem; */
+    /* border: 1px solid rgb(116, 85, 85); */
+    font-size: 3rem;
+    color: rgba(23, 24, 24, 0.973);
+    width: 400px;
+    margin-top: -10rem;
+    margin: 2rem 2rem;
+}
+
+#qouteButton{
+    padding: .8rem;
+    border-radius: .4rem;
+    /* background-color: rgba(227, 238, 223, 0.644); */
+    background-color: rgb(15, 128, 15);
+    color: rgba(255, 251, 251, 0.932);
+    font-size: 1.1rem;
+}
+
+#qouteButton:hover{
+    background-color: rgb(40, 46, 40);
+    color: white;
+}
+
+
+
+
+#form{
+   display: block;
+   width: 250px;
+   border: 1px solid rgba(255, 0, 0, 0.288);
+   margin:auto ;
+   padding: 1rem;
+
+   background-color: rgba(71, 71, 66, 0.438);
+   border-radius: 1rem;
+
+   /* background-image: url("../images/bg1.jpg");
+   background-size: cover; */
+}
+
+#form h4{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: rgba(27, 27, 27, 0.877);
+    
+}
+
+#name{
+    padding: .6rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    border-width: .1rem;
+}
+#email{
+    padding: .6rem;
+    margin-bottom: .5rem;
+    border-radius: .5rem;
+    border-width: .1rem;
+}
+#message{
+    padding: .5rem;
+    border-radius: .5rem;
+    border-width: .1rem;
+}
+
+#messageButton{
+    padding: .7rem;
+    width: 7rem ;
+    border-radius: .2rem;
+    border-width: .1rem;
+    margin-top: .5rem;
+    background-color: rgba(0, 128, 0, 0.637);
+}
+
+
+#messageButton:hover{
+    background-color: rgba(4, 212, 4, 0.89);
+}
+
+
+
+
+@media (max-width:800px) {
+    #form{
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width:445px) {
+    .heroContainer{
+        height: 90vh;
+        grid-template-columns: 1fr;
+
+    
+    }
+    
+    .heroContainer section{
+        margin-top: -20rem;
+        width: 200px;
+        padding: 2rem;
+        margin: auto;
+    }
+
+    .heroContainer h3{
+        font-size: 2rem;
+        margin: auto;
+    }
+}

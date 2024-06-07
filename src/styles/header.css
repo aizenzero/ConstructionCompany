@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly; /* Adjusted for better layout */
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(16, 17, 17, 0.767);
+  font-size: 1.2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  color: white;
+  z-index: 1000;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#cc {
+  background-color: rgb(194, 13, 13);
+  color: rgba(255, 255, 255, 0.699);
+  border-radius: 0.5rem;
+  padding: 0.1rem;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li {
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.nav-links li:hover {
+  background-color: rgba(122, 112, 112, 0.726);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: rgba(245, 234, 234, 0.781);
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.575);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: rgba(241, 234, 234, 0.952);
+}
+
+.quote-button {
+  padding: 0.8rem;
+  background-color: rgba(221, 233, 233, 0.616);
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quote-button:hover {
+  background-color: white;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .quote-button {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(16, 17, 17, 0.767);
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+    width: 100%; /* Ensures full-width for links */
+  }
+
+  .nav-links li {
+    margin: 0;
+    padding: 0.5rem 0;
+    width: 100%;
+  }
+
+  .nav-links li:hover {
+    background-color: rgba(122, 112, 112, 0.726);
+    border-radius: 0;
+    color: rgba(245, 234, 234, 0.781);
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-links a:hover {
+    color: rgba(241, 234, 234, 0.952);
+  }
+}
+
+
+@media (max-width:500px) {
+    .header{
+      justify-content: space-between;
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+}
